@@ -1,0 +1,188 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "FF DIN Pro Condensed" ,"sans-serif" ;
+    background-color: #f0efefd2;
+    margin: 0px;
+    padding: 0px;
+
+    width: 1350px;
+    height: auto;
+
+    body {
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+        font-weight: 400; /* Default weight */
+    }
+}
+
+
+/* NAVIGATION BAR */
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color:#ffffff;
+    width: 1375px;
+    height: 100px;
+
+    position: fixed;
+}
+
+.bar-left {
+    width: 450px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0px;
+}
+.social {
+    width: 20px;
+    height: auto;
+
+}
+.social:hover {
+    width: 22px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.logo:hover {
+    width: 62px;
+    height: 62px;
+}
+.one {
+    margin: 20px;
+    margin-left: 100px;
+}
+
+.bar-right {
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bar-right a {
+    text-decoration: none;
+    color: black;
+}
+.bar-right a:hover { /* targetting each anchor tag inside .bar-right class*/
+    font-weight: bold;
+}
+
+/* MAIN BODY (SECTION) */
+h1 {
+    font-style: italic;
+    padding: 180px 30px 50px 80px;
+    font-size: 50px;
+}
+
+section {
+    background-color: rgba(228, 225, 225, 0.342);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    border: 2px solid black;
+    width: 250px;
+    height: 350px;
+    background-color: #ffffff;
+    
+    padding: 20px;
+    margin: 100px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.image {
+    border: 2px solid rgb(241, 239, 239);
+    background-color: rgb(160, 161, 160);;
+    width: 205px;
+    height: auto;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border: 0.5px solid rgb(110, 109, 109);
+    border-radius: 5px;
+    background-color: rgb(197, 193, 193);
+
+    margin-top: 15px;
+}
+
+button:hover {
+    border: 2px solid black
+}
+
+/* FOOTER */
+
+.animation {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation h1 {
+    font-size: 100px;
+    color: rgb(39, 40, 41);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll { 
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%) ;
+    }
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
