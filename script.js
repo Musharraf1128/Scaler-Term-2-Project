@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize cart from local storage
+    // Initilises the cart from local storage or creates an empty cart
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Function to update cart in local storage and cart icon
+    // Fucntion to update the cart in local storage
     function updateCart() {
         localStorage.setItem('cart', JSON.stringify(cart));
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cartIcon.setAttribute('data-items', cartCount);
     }
 
-    // Function to add item to cart
+    // Function to add a product to the cart
     function addToCart(product) {
         const existingItem = cart.find(item => item.id === product.id);
         if (existingItem) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCart();
     }
 
-    // Event listeners for "Add to Cart" buttons
+    // Event listener for add to cart buttons
     document.querySelectorAll('.btn').forEach(button => {
         button.addEventListener('click', (event) => {
             const productElement = event.target.closest('.product');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Function to render cart items on the cart page
+    // Function to render the cart on the cart page
     function renderCart() {
         const cartItemsElement = document.querySelector('.cart-items');
         const cartSubtotalElement = document.querySelector('.cart-subtotal .price');
